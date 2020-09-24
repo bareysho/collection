@@ -1,0 +1,11 @@
+{
+  "name": "site",
+  "version": "0.1.0",  
+  "scripts": {
+    "start": "cd server && npm run serve",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "PORT": 8080,
+    "mongooseUri": "mongodb://localhost/collections",
+    "security": {
+        "tokenLife": 3600
+    },
+    "facebook": {
+        "clientId" : "1041328689584621",
+        "clientSecret" : "3246d3f32ee901936c669c03e9233632",
+        "callbackUrl" : "http://localhost:8080/api/login/facebook/callback"
+    },
+    "instagram": {
+        "clientId" : "225348815282071",
+        "clientSecret" : "798c625ce1cd291fbd5645b77eb465a5",
+        "callbackUrl" : "http://localhost:8080/api/login/facebook/callback"
+    },
+    "secretKey" : "ItransitionCourse2020",
+    "hostClient" : "http://localhost:3000"
+}
