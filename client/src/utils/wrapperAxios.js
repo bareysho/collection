@@ -1,8 +1,9 @@
 import axios from 'axios';
 const api = process.env.REACT_APP_API_URL
 export default class WrapperAxios {
-
     post(url, data) {
+        console.log(api);
+        console.log(url);
         //return axios.post(`http://localhost:8080/${url}`, data, { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } });
         return axios.post(`${api}/${url}`, data, { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } });
     }
