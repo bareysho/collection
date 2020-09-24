@@ -9,12 +9,16 @@ export default class WrapperAxios {
     }
 
     put(url, data) {
+        console.log(api);
+        console.log(url);
         //return axios.put(`http://localhost:8080/${url}`, data, { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } });
         return axios.put(`${api}/${url}`, data, { headers: {Authorization: 'Bearer ' + localStorage.getItem('token') } })
 
     }
 
     get(url) {
+        console.log(api);
+        console.log(url);
         //return axios.get(`http://localhost:8080/${url}`, { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } });
         return axios.get(`${api}/${url}`,  { headers: { Authorization: 'Bearer ' + localStorage.getItem('token') } })
     }
